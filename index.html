@@ -1,1 +1,531 @@
 
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f8f5ee">
+  <title>NOOR | فروشگاه نور</title>
+  <meta name="description" content="فروشگاه نور؛ انتخابی خاص برای کوچولوهای دوست‌داشتنی">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap');
+
+    :root {
+      --cream: #f8f5ee;
+      --paper: #fffdf8;
+      --olive: #626b45;
+      --dark: #27291f;
+      --gold: #c9a969;
+      --muted: #77776c;
+      --line: #e9e3d7;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--cream);
+      color: var(--dark);
+      font-family: 'Vazirmatn', Tahoma, sans-serif;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    button, input { font: inherit; }
+    button { cursor: pointer; }
+
+    .announcement {
+      background: var(--olive);
+      color: white;
+      text-align: center;
+      padding: 9px 12px;
+      font-size: 11px;
+    }
+
+    header {
+      background: rgba(255,253,248,.96);
+      border-bottom: 1px solid var(--line);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .header-inner {
+      max-width: 1120px;
+      margin: auto;
+      padding: 15px 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .brand {
+      text-align: center;
+      flex: 1;
+    }
+
+    .brand h1 {
+      margin: 0;
+      font-family: Georgia, serif;
+      font-size: 28px;
+      letter-spacing: 5px;
+      color: var(--olive);
+      direction: ltr;
+    }
+
+    .brand span {
+      font-size: 10px;
+      letter-spacing: 2px;
+      color: var(--muted);
+    }
+
+    .header-action {
+      border: 1px solid var(--line);
+      background: transparent;
+      border-radius: 50%;
+      width: 39px;
+      height: 39px;
+      display: grid;
+      place-items: center;
+      color: var(--olive);
+      font-size: 18px;
+    }
+
+    .hero {
+      max-width: 1120px;
+      margin: auto;
+      padding: 26px 16px 20px;
+    }
+
+    .hero-panel {
+      min-height: 300px;
+      border-radius: 5px;
+      overflow: hidden;
+      background: #e8e1d2;
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+
+    .hero-photo {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 35%;
+    }
+
+    .hero-shade {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(0deg, rgba(27,29,20,.68), rgba(27,29,20,.02) 85%);
+    }
+
+    .hero-copy {
+      position: relative;
+      z-index: 1;
+      padding: 25px;
+      align-self: flex-end;
+      color: white;
+      max-width: 340px;
+    }
+
+    .eyebrow {
+      font-size: 10px;
+      letter-spacing: 3px;
+      color: var(--gold);
+      direction: ltr;
+      text-align: right;
+    }
+
+    .hero-copy h2 {
+      font-size: 27px;
+      line-height: 1.8;
+      margin: 8px 0;
+      font-weight: 600;
+    }
+
+    .hero-copy p {
+      font-size: 12px;
+      line-height: 2;
+      margin: 0 0 16px;
+      color: #f4f0e7;
+    }
+
+    .primary-btn {
+      display: inline-block;
+      background: var(--paper);
+      color: var(--dark);
+      border: 0;
+      padding: 11px 19px;
+      font-size: 12px;
+      border-radius: 2px;
+    }
+
+    .section {
+      max-width: 1120px;
+      padding: 28px 16px;
+      margin: auto;
+    }
+
+    .section-heading {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 18px;
+    }
+
+    .section-heading h2 {
+      margin: 0;
+      font-size: 19px;
+      font-weight: 600;
+    }
+
+    .section-heading p {
+      margin: 5px 0 0;
+      font-size: 11px;
+      color: var(--muted);
+    }
+
+    .section-heading a {
+      color: var(--olive);
+      font-size: 11px;
+      white-space: nowrap;
+    }
+
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0,1fr));
+      gap: 9px;
+    }
+
+    .category {
+      text-align: center;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      padding: 14px 4px;
+    }
+
+    .category-icon {
+      width: 43px;
+      height: 43px;
+      border-radius: 50%;
+      background: #eeeadf;
+      color: var(--olive);
+      display: grid;
+      place-items: center;
+      margin: 0 auto 9px;
+      font-size: 21px;
+    }
+
+    .category span {
+      font-size: 11px;
+      font-weight: 500;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0,1fr));
+      gap: 12px;
+    }
+
+    .product {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      min-width: 0;
+      padding-bottom: 13px;
+    }
+
+    .product-image {
+      aspect-ratio: 4 / 5;
+      position: relative;
+      background: #eee9df;
+      overflow: hidden;
+    }
+
+    .product-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .product-tag {
+      position: absolute;
+      top: 9px;
+      right: 9px;
+      background: var(--olive);
+      color: white;
+      font-size: 9px;
+      padding: 5px 8px;
+    }
+
+    .product-info { padding: 11px 10px 0; }
+
+    .product-name {
+      font-size: 12px;
+      font-weight: 600;
+      margin: 0 0 6px;
+    }
+
+    .product-description {
+      font-size: 10px;
+      color: var(--muted);
+      margin: 0 0 10px;
+      line-height: 1.8;
+    }
+
+    .price {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--olive);
+    }
+
+    .old-price {
+      font-size: 10px;
+      color: #999;
+      text-decoration: line-through;
+      margin-left: 5px;
+    }
+
+    .buy-btn {
+      margin-top: 11px;
+      width: 100%;
+      border: 1px solid var(--olive);
+      background: transparent;
+      color: var(--olive);
+      padding: 9px 5px;
+      font-size: 11px;
+    }
+
+    .buy-btn:active { background: #efeee7; }
+
+    .story {
+      background: #e9e6d9;
+      text-align: center;
+      padding: 30px 20px;
+      margin: 10px 16px 25px;
+    }
+
+    .story .noor-mark {
+      font-family: Georgia, serif;
+      font-size: 27px;
+      letter-spacing: 5px;
+      color: var(--olive);
+      direction: ltr;
+    }
+
+    .story h2 { font-size: 18px; font-weight: 600; }
+    .story p {
+      max-width: 420px;
+      margin: 0 auto;
+      color: #66685a;
+      font-size: 12px;
+      line-height: 2.2;
+    }
+
+    footer {
+      background: #292c22;
+      color: #f8f5ee;
+      text-align: center;
+      padding: 27px 18px 90px;
+    }
+
+    footer .footer-brand {
+      font-family: Georgia, serif;
+      letter-spacing: 5px;
+      font-size: 23px;
+      direction: ltr;
+    }
+
+    footer p {
+      color: #d4d0c4;
+      font-size: 11px;
+      line-height: 2.2;
+    }
+
+    .contact-btn {
+      display: inline-block;
+      margin-top: 8px;
+      border: 1px solid #b9b99e;
+      padding: 10px 20px;
+      font-size: 12px;
+      color: white;
+    }
+
+    .bottom-nav {
+      position: fixed;
+      z-index: 20;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: space-around;
+      padding: 10px 5px calc(10px + env(safe-area-inset-bottom));
+      background: rgba(255,253,248,.97);
+      border-top: 1px solid var(--line);
+    }
+
+    .bottom-nav a {
+      display: grid;
+      gap: 3px;
+      justify-items: center;
+      font-size: 9px;
+      color: var(--muted);
+    }
+
+    .bottom-nav b { font-size: 19px; font-weight: 400; }
+    .bottom-nav .active { color: var(--olive); }
+
+    @media (min-width: 650px) {
+      .hero-panel { min-height: 440px; }
+      .hero-copy { padding: 40px; }
+      .hero-copy h2 { font-size: 38px; }
+      .products { grid-template-columns: repeat(4, minmax(0,1fr)); gap: 18px; }
+      .categories { gap: 16px; }
+      .category { padding: 22px; }
+      .bottom-nav { display: none; }
+      footer { padding-bottom: 35px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="announcement">انتخابی خاص برای کوچولوهای دوست‌داشتنی ✦</div>
+
+  <header>
+    <div class="header-inner">
+      <button class="header-action" aria-label="سبد خرید" onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})">♡</button>
+      <a class="brand" href="#">
+        <h1>NOOR</h1>
+        <span>فروشگاه نور</span>
+      </a>
+      <button class="header-action" aria-label="محصولات" onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})">⌕</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-panel">
+        <img class="hero-photo" src="https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?auto=format&fit=crop&w=1400&q=85" alt="استایل کودکانه">
+        <div class="hero-shade"></div>
+        <div class="hero-copy">
+          <div class="eyebrow">LITTLE MOMENTS, BIG LOVE</div>
+          <h2>دنیایی از زیبایی<br>برای کوچولوها</h2>
+          <p>انتخاب‌هایی خاص و دوست‌داشتنی برای استایل هر روز کودکان شما.</p>
+          <a class="primary-btn" href="#products">دیدن محصولات &larr;</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="categories">
+      <div class="section-heading">
+        <div>
+          <h2>دسته‌بندی محصولات</h2>
+          <p>برای هر سن، یک انتخاب دوست‌داشتنی</p>
+        </div>
+      </div>
+      <div class="categories">
+        <a class="category" href="#products"><div class="category-icon">♧</div><span>نوزادی</span></a>
+        <a class="category" href="#products"><div class="category-icon">♡</div><span>دخترانه</span></a>
+        <a class="category" href="#products"><div class="category-icon">✳</div><span>پسرانه</span></a>
+        <a class="category" href="#products"><div class="category-icon">✦</div><span>ست‌ها</span></a>
+      </div>
+    </section>
+
+    <section class="section" id="products">
+      <div class="section-heading">
+        <div>
+          <h2>منتخب‌های نور</h2>
+          <p>چند انتخاب خاص برای شروع</p>
+        </div>
+        <a href="#contact">سفارش و راهنمایی ←</a>
+      </div>
+
+      <div class="products">
+        <!-- برای تغییر محصول، عکس، نام و قیمت همین کارت را ویرایش کن -->
+        <article class="product">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?auto=format&fit=crop&w=700&q=80" alt="لباس کودک">
+            <span class="product-tag">منتخب</span>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">ست روزمره کودک</h3>
+            <p class="product-description">راحت و مناسب استفاده روزانه</p>
+            <div class="price">۱,۸۹۰,۰۰۰ تومان</div>
+            <button class="buy-btn" onclick="orderProduct('ست روزمره کودک')">استعلام و سفارش</button>
+          </div>
+        </article>
+
+        <article class="product">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?auto=format&fit=crop&w=700&q=80" alt="پوشاک کودک">
+            <span class="product-tag">جدید</span>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">هودی مینیمال</h3>
+            <p class="product-description">استایلی ساده و خاص</p>
+            <div class="price">۲,۲۵۰,۰۰۰ تومان</div>
+            <button class="buy-btn" onclick="orderProduct('هودی مینیمال')">استعلام و سفارش</button>
+          </div>
+        </article>
+
+        <article class="product">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?auto=format&fit=crop&w=700&q=80" alt="لباس بچگانه">
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">پلیور نرم کودک</h3>
+            <p class="product-description">مناسب روزهای خنک</p>
+            <div class="price">۱,۶۹۰,۰۰۰ تومان</div>
+            <button class="buy-btn" onclick="orderProduct('پلیور نرم کودک')">استعلام و سفارش</button>
+          </div>
+        </article>
+
+        <article class="product">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?auto=format&fit=crop&w=700&q=80" alt="استایل کودک">
+            <span class="product-tag">پیشنهاد نور</span>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">کت سبک کودک</h3>
+            <p class="product-description">انتخابی شیک برای بیرون</p>
+            <div class="price">۲,۷۹۰,۰۰۰ تومان</div>
+            <button class="buy-btn" onclick="orderProduct('کت سبک کودک')">استعلام و سفارش</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="story">
+      <div class="noor-mark">NOOR</div>
+      <h2>سادگی، کیفیت، عشق</h2>
+      <p>در فروشگاه نور، لباس‌هایی را انتخاب می‌کنیم که لحظه‌های کودکی را زیباتر کنند. برای دریافت اطلاعات سایز، موجودی و قیمت روز با ما در ارتباط باشید.</p>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="footer-brand">NOOR</div>
+    <p>فروشگاه نور · پوشاک کودک</p>
+    <p>برای اطلاع از موجودی و ثبت سفارش با ما در تماس باشید.</p>
+    <!-- شماره واتساپ یا لینک شبکه اجتماعی را بعداً جایگزین می‌کنیم -->
+    <a class="contact-btn" href="https://instagram.com/" target="_blank" rel="noopener">ارتباط با فروشگاه</a>
+    <p>© NOOR Store</p>
+  </footer>
+
+  <nav class="bottom-nav">
+    <a class="active" href="#"><b>⌂</b>خانه</a>
+    <a href="#categories"><b>▦</b>دسته‌ها</a>
+    <a href="#products"><b>♡</b>محصولات</a>
+    <a href="#contact"><b>☏</b>تماس</a>
+  </nav>
+
+  <script>
+    function orderProduct(name) {
+      alert('برای سفارش «' + name + '» فعلاً با فروشگاه تماس بگیرید. راه ارتباطی را در مرحله بعد تنظیم می‌کنیم.');
+    }
+  </script>
+</body>
+                                                                                 </html>
+
