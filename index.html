@@ -1,34 +1,532 @@
-<!doctype html>
-<html lang="fa" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#26382d"><title>فروشگاه نور | NOOR Kids Boutique</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-<style>
-:root{--g:#26382d;--g2:#405747;--c:#f7f3eb;--p:#fffdf9;--gold:#c7a66a;--ink:#252a24;--mut:#77796f;--line:#e9e2d6;--shadow:0 12px 36px #26382d12}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--p);color:var(--ink);font-family:Vazirmatn,Tahoma,sans-serif;line-height:1.8}button,input,select,textarea{font:inherit}button,a{cursor:pointer}a{color:inherit;text-decoration:none}.wrap{width:min(1200px,calc(100% - 36px));margin:auto}.announcement{background:var(--g);color:#f7f3eb;text-align:center;padding:7px;font-size:12px}.header{border-bottom:1px solid var(--line)}.head{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:13px 0}.brand{display:flex;align-items:center;gap:10px}.mark{width:43px;height:43px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:var(--gold);font:700 24px Georgia}.brand b{font-size:22px;letter-spacing:3px;display:block;line-height:1.1}.brand small{font-size:9px;letter-spacing:2px;color:var(--mut)}.search{position:relative;flex:1;max-width:390px}.search input{width:100%;border:1px solid var(--line);background:#faf8f3;border-radius:30px;padding:10px 40px 10px 14px;outline:0;font-size:12px}.search span{position:absolute;right:14px;top:7px;color:var(--mut);font-size:20px}.actions{display:flex;gap:7px}.ico{width:40px;height:40px;border:1px solid var(--line);background:transparent;border-radius:50%;color:var(--g);position:relative}.count{position:absolute;top:-4px;left:-4px;background:var(--gold);color:#fff;border-radius:15px;font-size:10px;min-width:17px;padding:0 4px}.nav{display:flex;justify-content:center;gap:30px;padding:9px 0;font-size:12px;color:#50564d}.nav a:hover{color:var(--gold)}.hero{padding:28px 0 22px}.hero-card{min-height:390px;border-radius:4px;overflow:hidden;color:white;display:flex;align-items:center;background:linear-gradient(100deg,#1d2b22e8,#26382d70),url('https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?auto=format&fit=crop&w=1800&q=85') center 42%/cover}.hero-copy{padding:40px 7%;max-width:570px}.eyebrow,.kicker{font-size:10px;letter-spacing:2.5px;color:var(--gold);font-weight:800}.hero h1{font-size:clamp(30px,4.5vw,52px);line-height:1.45;margin:12px 0}.hero p{font-size:13px;color:#f0eee7;max-width:400px;margin:0 0 22px}.btn{border:1px solid transparent;border-radius:3px;padding:10px 20px;display:inline-flex;justify-content:center;gap:7px;font-size:12px;font-weight:600}.gold{background:var(--gold);color:white}.dark{background:var(--g);color:white}.outline{border-color:#ffffff9c;color:white}.benefits{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;padding:16px 0 32px}.benefit{display:flex;align-items:center;gap:10px;padding:13px;background:#faf8f3;border:1px solid #f0eadf}.benefit i{width:36px;height:36px;border:1px solid #dfd1b3;border-radius:50%;display:grid;place-items:center;color:var(--g);font-style:normal}.benefit b{font-size:11px;display:block}.benefit small{font-size:9px;color:var(--mut)}.section-head{display:flex;align-items:end;justify-content:space-between;gap:12px;margin:12px 0 18px}.section-head h2{margin:3px 0 0;color:var(--g);font-size:25px}.section-head p{font-size:11px;color:var(--mut);margin:0}.categories{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin-bottom:42px}.cat{height:200px;position:relative;overflow:hidden;background:var(--c)}.cat img{width:100%;height:100%;object-fit:cover;transition:.4s}.cat:hover img{transform:scale(1.06)}.cat:after{content:'';position:absolute;inset:35% 0 0;background:linear-gradient(transparent,#162018b8)}.cat div{position:absolute;z-index:1;bottom:12px;right:16px;color:white}.cat b{display:block}.cat small{font-size:10px}.toolbar{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:17px}.filters{display:flex;gap:6px;flex-wrap:wrap}.filter{border:1px solid var(--line);background:transparent;padding:6px 13px;border-radius:22px;font-size:11px;color:#55594f}.filter.active,.filter:hover{background:var(--g);color:white;border-color:var(--g)}select{border:1px solid var(--line);background:white;padding:7px 10px;font-size:11px;color:#555}.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px 15px}.card{min-width:0}.photo{aspect-ratio:4/5;position:relative;overflow:hidden;background:#f0ece4}.photo img{width:100%;height:100%;object-fit:cover;display:block;transition:.4s}.card:hover .photo img{transform:scale(1.035)}.tag{position:absolute;top:9px;right:9px;background:var(--p);font-size:9px;padding:3px 8px;color:var(--g)}.heart{position:absolute;top:8px;left:8px;border:0;background:#fffdf9e8;width:31px;height:31px;border-radius:50%;color:#777;font-size:17px}.heart.active{color:#b65e5e}.add{position:absolute;bottom:9px;right:9px;left:9px;border:0;background:#fffdf9ed;color:var(--g);padding:8px;font-size:11px;opacity:0;transition:.2s}.card:hover .add{opacity:1}.info{padding:8px 2px}.catname{font-size:10px;color:var(--mut)}.name{font-size:12px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.price{font-size:12px;color:var(--g);font-weight:800}.old{font-size:10px;color:#aaa;text-decoration:line-through;margin-right:6px}.empty{grid-column:1/-1;text-align:center;padding:45px;color:var(--mut)}.more{text-align:center;padding:26px 0 42px}.note{background:#f8f4ec;border-right:3px solid var(--gold);padding:12px 15px;margin:0 0 32px;font-size:11px;color:#68685e}.note code{direction:ltr;display:inline-block;background:#eee6d8;padding:1px 5px}.story{display:grid;grid-template-columns:1fr 1fr;background:#f6f1e7;margin-bottom:42px}.story-img{min-height:270px;background:url('https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=1000&q=85') center/cover}.story-copy{padding:34px 8%;align-self:center}.story-copy h2{font-size:26px;color:var(--g);margin:8px 0}.story-copy p{font-size:12px;color:#6c6e63;line-height:2.1}.newsletter{background:var(--g);color:white;padding:30px 0}.newsinner{display:flex;justify-content:space-between;align-items:center;gap:20px}.newsletter h3{margin:0;font-size:19px}.newsletter p{margin:3px 0;color:#d2d8d0;font-size:11px}.newsform{display:flex;max-width:420px;width:100%}.newsform input{flex:1;min-width:0;border:0;padding:11px 13px;font-size:12px}.newsform button{border:0;background:var(--gold);color:white;padding:0 15px;font-size:11px}.footer{background:#1d2b22;color:#e9e8df;padding:38px 0 16px}.footgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:25px}.footer h4{font-size:12px;margin:0 0 12px;color:white}.footer p,.footer li,.footer a{font-size:11px;color:#c1c6bd}.footer p{line-height:2}.footer ul{list-style:none;margin:0;padding:0}.footer li{margin:7px 0}.footer a:hover{color:var(--gold)}.footbottom{border-top:1px solid #354238;margin-top:25px;padding-top:13px;display:flex;justify-content:space-between;flex-wrap:wrap;color:#aab1a7;font-size:10px}.backdrop{position:fixed;inset:0;background:#0f170f99;z-index:50;display:none;align-items:center;justify-content:center;padding:15px}.backdrop.open{display:flex}.modal{background:var(--p);width:min(560px,100%);max-height:88vh;overflow:auto;padding:24px;position:relative}.close{position:absolute;left:10px;top:5px;border:0;background:none;font-size:25px;color:var(--mut)}.modal h3{margin:0 0 10px;color:var(--g)}.modal p{font-size:12px;color:var(--mut)}.field{display:block;margin:11px 0}.field span{display:block;font-size:11px;margin-bottom:4px}.field input,.field textarea,.field select{width:100%;padding:10px;border:1px solid var(--line);background:white;outline:0}.field textarea{min-height:85px}.cartitem{display:grid;grid-template-columns:60px 1fr auto;gap:10px;align-items:center;padding:10px 0;border-bottom:1px solid var(--line)}.cartitem img{width:60px;height:68px;object-fit:cover}.cartitem b{font-size:11px}.cartitem small{display:block;color:var(--mut);font-size:10px}.qty{display:flex;align-items:center;gap:6px;margin-top:4px}.qty button{border:1px solid var(--line);background:white;width:24px;height:24px}.total{display:flex;justify-content:space-between;padding:14px 0;font-weight:800}.toast{position:fixed;bottom:22px;right:50%;transform:translate(50%,20px);background:var(--g);color:white;padding:10px 17px;z-index:100;font-size:12px;opacity:0;transition:.2s;pointer-events:none}.toast.show{opacity:1;transform:translate(50%,0)}.mobile{display:none}
-@media(max-width:900px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))}.benefits{grid-template-columns:repeat(2,1fr)}.footgrid{grid-template-columns:repeat(2,1fr)}.search{max-width:280px}}
-@media(max-width:600px){.wrap{width:calc(100% - 24px)}.announcement{font-size:10px}.head{gap:8px;flex-wrap:wrap;padding:10px 0}.mark{width:36px;height:36px;font-size:20px}.brand b{font-size:18px}.brand small{font-size:8px}.ico{width:34px;height:34px}.search{order:3;flex-basis:100%;max-width:none}.search input{padding-top:8px;padding-bottom:8px}.nav{justify-content:flex-start;overflow:auto;white-space:nowrap;gap:22px;font-size:11px}.hero{padding-top:15px}.hero-card{min-height:330px;background-position:58% center}.hero-copy{padding:25px 20px}.hero h1{font-size:30px}.hero p{font-size:11px;max-width:280px}.btn{padding:9px 13px;font-size:10px}.benefits{gap:7px;padding:12px 0 25px}.benefit{padding:9px 7px;gap:7px}.benefit i{width:30px;height:30px;font-size:13px}.benefit b{font-size:10px}.benefit small{font-size:8px}.section-head h2{font-size:21px}.section-head p{font-size:9px}.categories{grid-template-columns:repeat(2,1fr);gap:9px;margin-bottom:30px}.cat{height:155px}.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 10px}.name{font-size:11px}.price{font-size:11px}.add{opacity:1;padding:7px;font-size:10px}.toolbar{align-items:flex-start}.filter{padding:6px 9px;font-size:10px}.story{grid-template-columns:1fr}.story-img{min-height:190px}.story-copy{padding:23px}.story-copy h2{font-size:22px}.newsinner{align-items:flex-start;flex-direction:column}.newsform{max-width:none}.footgrid{grid-template-columns:1fr 1fr;gap:20px 12px}.footgrid>div:first-child{grid-column:1/-1}.footer{padding-top:28px}.mobile{display:flex;position:fixed;bottom:0;right:0;left:0;z-index:20;background:#fffdf9f5;border-top:1px solid var(--line);justify-content:space-around;padding:6px 4px calc(6px + env(safe-area-inset-bottom));backdrop-filter:blur(10px)}.mobile button{border:0;background:transparent;color:var(--g);font-size:9px;display:flex;flex-direction:column;align-items:center}.mobile span{font-size:18px}.toast{bottom:70px}}
-</style></head><body>
-<div class="announcement">ارسال به سراسر ایران · بسته‌بندی شیک و هدیه‌پسند · همراه کوچولوهای شما</div><header class="header"><div class="wrap head"><a class="brand" href="#home"><span class="mark">N</span><span><b>NOOR</b><small>KIDS BOUTIQUE</small></span></a><div class="search"><span>⌕</span><input id="search" placeholder="جست‌وجوی لباس، رنگ یا دسته‌بندی..." aria-label="جست‌وجو"></div><div class="actions"><button class="ico" id="profile" title="پروفایل">♙</button><button class="ico" id="favorites" title="علاقه‌مندی‌ها">♡<span class="count" id="favCount">0</span></button><button class="ico" id="cart" title="سبد خرید">♧<span class="count" id="cartCount">0</span></button></div></div></header>
-<nav class="nav wrap"><a href="#home">خانه</a><a href="#categories">دسته‌بندی‌ها</a><a href="#products">همه محصولات</a><a href="#story">درباره نور</a><a href="#shipping">راهنمای ارسال</a><a href="#contact">تماس با ما</a></nav>
-<main><section class="hero wrap" id="home"><div class="hero-card"><div class="hero-copy"><div class="eyebrow">LITTLE MOMENTS, BIG LOVE</div><h1>برای کوچولوها،<br>با عشق انتخاب شده</h1><p>دنیایی از لباس‌های دوست‌داشتنی با انتخابی دقیق، کیفیتی دلنشین و استایلی که خاطره می‌سازد.</p><a class="btn gold" href="#products">دیدن مجموعه جدید ←</a> <a class="btn outline" href="#categories">دسته‌بندی‌ها</a></div></div></section>
-<section class="wrap benefits" id="shipping"><div class="benefit"><i>♧</i><div><b>ارسال به سراسر ایران</b><small>هماهنگی و پیگیری سفارش</small></div></div><div class="benefit"><i>◇</i><div><b>انتخاب باکیفیت</b><small>توجه به جزئیات و راحتی</small></div></div><div class="benefit"><i>♡</i><div><b>بسته‌بندی دوست‌داشتنی</b><small>آماده برای هدیه دادن</small></div></div><div class="benefit"><i>☏</i><div><b>پشتیبانی پاسخ‌گو</b><small>قبل و بعد از خرید</small></div></div></section>
-<section class="wrap" id="categories"><div class="section-head"><div><div class="kicker">SHOP BY CATEGORY</div><h2>برای هر روزِ کوچکی</h2></div><p>انتخاب آسان، استایل دوست‌داشتنی</p></div><div class="categories"><a class="cat" href="#products" data-cat="دورس و هودی"><img loading="lazy" src="https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?auto=format&fit=crop&w=700&q=80" alt="دورس و هودی کودک"><div><b>دورس و هودی</b><small>گرم و راحت</small></div></a><a class="cat" href="#products" data-cat="کاپشن"><img loading="lazy" src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=700&q=80" alt="لباس گرم کودک"><div><b>لباس گرم</b><small>برای روزهای خنک</small></div></a><a class="cat" href="#products" data-cat="ست راحتی"><img loading="lazy" src="https://images.unsplash.com/photo-1503919005314-30d93d07d823?auto=format&fit=crop&w=700&q=80" alt="ست راحتی کودک"><div><b>ست‌های راحتی</b><small>برای بازی و لبخند</small></div></a><a class="cat" href="#products" data-cat="اکسسوری"><img loading="lazy" src="https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&w=700&q=80" alt="اکسسوری کودک"><div><b>جزئیات کوچک</b><small>اکسسوری و هدیه</small></div></a></div></section>
-<section class="wrap" id="products"><div class="section-head"><div><div class="kicker">THE NOOR COLLECTION</div><h2 id="title">محبوب‌های نور</h2></div><p id="resultCount">محصولات منتخب</p></div><div class="toolbar"><div class="filters" id="filters"><button class="filter active" data-filter="همه">همه</button><button class="filter" data-filter="دورس و هودی">دورس و هودی</button><button class="filter" data-filter="کاپشن">کاپشن</button><button class="filter" data-filter="ست راحتی">ست راحتی</button><button class="filter" data-filter="اکسسوری">اکسسوری</button></div><select id="sort"><option value="featured">مرتب‌سازی: پیشنهادی</option><option value="low">ارزان‌ترین</option><option value="high">گران‌ترین</option><option value="name">نام محصول</option></select></div><div class="grid" id="grid"></div><div class="more"><button class="btn dark" id="more">نمایش محصولات بیشتر</button></div><div class="note"><b>راهنمای افزودن محصولات:</b> این قالب برای نمایش ۱۵۰ محصول یا بیشتر آماده است. در فایل <code>index.html</code> آرایه <code>PRODUCTS</code> را پیدا کنید و برای هر محصول یک سطر جدید با شناسه یکتا، نام، دسته، قیمت و آدرس عکس اضافه کنید. نمونه در کد موجود است.</div></section>
-<section class="wrap story" id="story"><div class="story-img" role="img" aria-label="لحظه‌های شیرین کودکی"></div><div class="story-copy"><div class="kicker">A LITTLE MORE ABOUT US</div><h2>نور؛ برای لحظه‌های روشن کودکی</h2><p>ما باور داریم لباس کودک باید به‌اندازه خاطره‌هایی که می‌سازد، دوست‌داشتنی باشد. در نور، انتخاب‌ها با نگاه به راحتی، زیبایی و جزئیات انجام می‌شوند؛ تا هر روز، یک خاطره قشنگ‌تر شود.</p><a class="btn dark" href="#contact">با ما در ارتباط باشید</a></div></section>
-<section class="newsletter"><div class="wrap newsinner"><div><h3>از مجموعه‌های تازه باخبر شو</h3><p>برای دریافت خبر محصولات جدید، شماره تماس خودت را وارد کن.</p></div><form class="newsform" id="newsform"><input type="tel" placeholder="شماره موبایل" required><button>عضویت در خبرنامه</button></form></div></section></main>
-<footer class="footer" id="contact"><div class="wrap"><div class="footgrid"><div><a class="brand" href="#home"><span class="mark">N</span><span><b>NOOR</b><small>KIDS BOUTIQUE</small></span></a><p>لباس‌هایی برای قدم‌های کوچک، بازی‌های بزرگ و خاطره‌هایی که می‌مانند.</p></div><div><h4>دسترسی سریع</h4><ul><li><a href="#products">همه محصولات</a></li><li><a href="#categories">دسته‌بندی‌ها</a></li><li><a href="#story">درباره فروشگاه</a></li><li><a href="#shipping">شیوه ارسال</a></li></ul></div><div><h4>راهنمای خرید</h4><ul><li><a href="#" data-info="shipping">هزینه و زمان ارسال</a></li><li><a href="#" data-info="size">راهنمای انتخاب سایز</a></li><li><a href="#" data-info="returns">تعویض و مرجوعی</a></li><li><a href="#" data-info="faq">سؤالات پرتکرار</a></li></ul></div><div><h4>تماس با نور</h4><p>برای مشاوره سایز، موجودی و ثبت سفارش با ما در ارتباط باشید.</p><ul><li>تلفن: <a href="tel:09120000000">۰۹۱۲ ۰۰۰ ۰۰۰۰</a></li><li>اینستاگرام: <a href="https://instagram.com/">@noor.kids</a></li><li>ساعات پاسخ‌گویی: ۱۰ تا ۲۰</li></ul></div></div><div class="footbottom"><span>© تمامی حقوق برای فروشگاه نور محفوظ است.</span><span>طراحی‌شده با عشق برای کوچولوها ✦</span></div></div></footer>
-<nav class="mobile"><button onclick="scrollTo({top:0,behavior:'smooth'})"><span>⌂</span>خانه</button><button onclick="document.querySelector('#products').scrollIntoView({behavior:'smooth'})"><span>▦</span>محصولات</button><button id="msearch"><span>⌕</span>جست‌وجو</button><button id="mprofile"><span>♙</span>پروفایل</button><button id="mcart"><span>♧</span>سبد خرید</button></nav>
-<div class="backdrop" id="backdrop"><div class="modal"><button class="close" id="close">×</button><div id="modalbody"></div></div></div><div class="toast" id="toast"></div>
-<script>
-// محصولات نمونه. برای اضافه کردن کالا، یک شیء دیگر با id یکتا به این آرایه اضافه کنید.
-// category باید یکی از این‌ها باشد: دورس و هودی، کاپشن، ست راحتی، اکسسوری
-// ظرفیت نمایش در این قالب ۱۵۰ محصول است؛ می‌توانید آرایه را بزرگ‌تر هم کنید.
-const PRODUCTS=[
-{id:1,name:'دورس مینیمال سبز زیتونی',category:'دورس و هودی',price:1280000,oldPrice:1490000,badge:'پیشنهاد ویژه',image:'https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?auto=format&fit=crop&w=800&q=85'},
-{id:2,name:'ست راحتی کرم کوچولو',category:'ست راحتی',price:1590000,badge:'تازه رسیده',image:'https://images.unsplash.com/photo-1503919005314-30d93d07d823?auto=format&fit=crop&w=800&q=85'},
-{id:3,name:'کاپشن روزهای سرد',category:'کاپشن',price:2450000,oldPrice:2790000,badge:'تخفیف',image:'https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=800&q=85'},
-{id:4,name:'هودی نرم شیری',category:'دورس و هودی',price:1390000,badge:'محبوب',image:'https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&w=800&q=85'},
-{id:5,name:'ست روزمره خاکی',category:'ست راحتی',price:1750000,image:'https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&w=800&q=85'},
-{id:6,name:'کاپشن پافر کلاسیک',category:'کاپشن',price:2890000,badge:'محدود',image:'https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?auto=format&fit=crop&w=800&q=85'},
-{id:7,name:'دورس ساده و شیک',category:'دورس و هودی',price:1190000,image:'https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=800&q=85'},
-{id:8,name:'ست راحتی آخر هفته',category:'ست راحتی',price:1680000,oldPrice:1890000,image:'https://images.unsplash.com/photo-1503919005314-30d93d07d823?auto=format&fit=crop&w=800&q=85'},
-{id:9,name:'کلاه بافت لطیف',category:'اکسسوری',price:390000,badge:'هدیه کوچک',image:'https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&w=800&q=85'},
-{id:10,name:'هودی گرم روزهای بارانی',category:'دورس و هودی',price:1490000,image:'https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&w=800&q=85'},
-{id:11,name:'ست دو تکه کرم',category:'ست راحتی',price:1850000,badge:'تازه رسیده',image:'https://images.unsplash.com/photo-1516627145497
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f8f5ee">
+  <title>NOOR | فروشگاه نور</title>
+  <meta name="description" content="فروشگاه نور؛ انتخابی خاص برای کوچولوهای دوست‌داشتنی">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap');
+
+    :root {
+      --cream: #f8f5ee;
+      --paper: #fffdf8;
+      --olive: #626b45;
+      --dark: #27291f;
+      --gold: #c9a969;
+      --muted: #77776c;
+      --line: #e9e3d7;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--cream);
+      color: var(--dark);
+      font-family: 'Vazirmatn', Tahoma, sans-serif;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    button, input { font: inherit; }
+    button { cursor: pointer; }
+
+    .announcement {
+      background: var(--olive);
+      color: white;
+      text-align: center;
+      padding: 9px 12px;
+      font-size: 11px;
+    }
+
+    header {
+      background: rgba(255,253,248,.96);
+      border-bottom: 1px solid var(--line);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .header-inner {
+      max-width: 1120px;
+      margin: auto;
+      padding: 15px 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .brand {
+      text-align: center;
+      flex: 1;
+    }
+
+    .brand h1 {
+      margin: 0;
+      font-family: Georgia, serif;
+      font-size: 28px;
+      letter-spacing: 5px;
+      color: var(--olive);
+      direction: ltr;
+    }
+
+    .brand span {
+      font-size: 10px;
+      letter-spacing: 2px;
+      color: var(--muted);
+    }
+
+    .header-action {
+      border: 1px solid var(--line);
+      background: transparent;
+      border-radius: 50%;
+      width: 39px;
+      height: 39px;
+      display: grid;
+      place-items: center;
+      color: var(--olive);
+      font-size: 18px;
+    }
+
+    .hero {
+      max-width: 1120px;
+      margin: auto;
+      padding: 26px 16px 20px;
+    }
+
+    .hero-panel {
+      min-height: 300px;
+      border-radius: 5px;
+      overflow: hidden;
+      background: #e8e1d2;
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+
+    .hero-photo {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 35%;
+    }
+
+    .hero-shade {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(0deg, rgba(27,29,20,.68), rgba(27,29,20,.02) 85%);
+    }
+
+    .hero-copy {
+      position: relative;
+      z-index: 1;
+      padding: 25px;
+      align-self: flex-end;
+      color: white;
+      max-width: 340px;
+    }
+
+    .eyebrow {
+      font-size: 10px;
+      letter-spacing: 3px;
+      color: var(--gold);
+      direction: ltr;
+      text-align: right;
+    }
+
+    .hero-copy h2 {
+      font-size: 27px;
+      line-height: 1.8;
+      margin: 8px 0;
+      font-weight: 600;
+    }
+
+    .hero-copy p {
+      font-size: 12px;
+      line-height: 2;
+      margin: 0 0 16px;
+      color: #f4f0e7;
+    }
+
+    .primary-btn {
+      display: inline-block;
+      background: var(--paper);
+      color: var(--dark);
+      border: 0;
+      padding: 11px 19px;
+      font-size: 12px;
+      border-radius: 2px;
+    }
+
+    .section {
+      max-width: 1120px;
+      padding: 28px 16px;
+      margin: auto;
+    }
+
+    .section-heading {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 18px;
+    }
+
+    .section-heading h2 {
+      margin: 0;
+      font-size: 19px;
+      font-weight: 600;
+    }
+
+    .section-heading p {
+      margin: 5px 0 0;
+      font-size: 11px;
+      color: var(--muted);
+    }
+
+    .section-heading a {
+      color: var(--olive);
+      font-size: 11px;
+      white-space: nowrap;
+    }
+
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0,1fr));
+      gap: 9px;
+    }
+
+    .category {
+      text-align: center;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      padding: 14px 4px;
+    }
+
+    .category-icon {
+      width: 43px;
+      height: 43px;
+      border-radius: 50%;
+      background: #eeeadf;
+      color: var(--olive);
+      display: grid;
+      place-items: center;
+      margin: 0 auto 9px;
+      font-size: 21px;
+    }
+
+    .category span {
+      font-size: 11px;
+      font-weight: 500;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0,1fr));
+      gap: 12px;
+    }
+
+    .product {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      min-width: 0;
+      padding-bottom: 13px;
+    }
+
+    .product-image {
+      aspect-ratio: 4 / 5;
+      position: relative;
+      background: #eee9df;
+      overflow: hidden;
+    }
+
+    .product-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .product-tag {
+      position: absolute;
+      top: 9px;
+      right: 9px;
+      background: var(--olive);
+      color: white;
+      font-size: 9px;
+      padding: 5px 8px;
+    }
+
+    .product-info { padding: 11px 10px 0; }
+
+    .product-name {
+      font-size: 12px;
+      font-weight: 600;
+      margin: 0 0 6px;
+    }
+
+    .product-description {
+      font-size: 10px;
+      color: var(--muted);
+      margin: 0 0 10px;
+      line-height: 1.8;
+    }
+
+    .price {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--olive);
+    }
+
+    .old-price {
+      font-size: 10px;
+      color: #999;
+      text-decoration: line-through;
+      margin-left: 5px;
+    }
+
+    .buy-btn {
+      margin-top: 11px;
+      width: 100%;
+      border: 1px solid var(--olive);
+      background: transparent;
+      color: var(--olive);
+      padding: 9px 5px;
+      font-size: 11px;
+    }
+
+    .buy-btn:active { background: #efeee7; }
+
+    .story {
+      background: #e9e6d9;
+      text-align: center;
+      padding: 30px 20px;
+      margin: 10px 16px 25px;
+    }
+
+    .story .noor-mark {
+      font-family: Georgia, serif;
+      font-size: 27px;
+      letter-spacing: 5px;
+      color: var(--olive);
+      direction: ltr;
+    }
+
+    .story h2 { font-size: 18px; font-weight: 600; }
+    .story p {
+      max-width: 420px;
+      margin: 0 auto;
+      color: #66685a;
+      font-size: 12px;
+      line-height: 2.2;
+    }
+
+    footer {
+      background: #292c22;
+      color: #f8f5ee;
+      text-align: center;
+      padding: 27px 18px 90px;
+    }
+
+    footer .footer-brand {
+      font-family: Georgia, serif;
+      letter-spacing: 5px;
+      font-size: 23px;
+      direction: ltr;
+    }
+
+    footer p {
+      color: #d4d0c4;
+      font-size: 11px;
+      line-height: 2.2;
+    }
+
+    .contact-btn {
+      display: inline-block;
+      margin-top: 8px;
+      border: 1px solid #b9b99e;
+      padding: 10px 20px;
+      font-size: 12px;
+      color: white;
+    }
+
+    .bottom-nav {
+      position: fixed;
+      z-index: 20;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: space-around;
+      padding: 10px 5px calc(10px + env(safe-area-inset-bottom));
+      background: rgba(255,253,248,.97);
+      border-top: 1px solid var(--line);
+    }
+
+    .bottom-nav a {
+      display: grid;
+      gap: 3px;
+      justify-items: center;
+      font-size: 9px;
+      color: var(--muted);
+    }
+
+    .bottom-nav b { font-size: 19px; font-weight: 400; }
+    .bottom-nav .active { color: var(--olive); }
+
+    @media (min-width: 650px) {
+      .hero-panel { min-height: 440px; }
+      .hero-copy { padding: 40px; }
+      .hero-copy h2 { font-size: 38px; }
+      .products { grid-template-columns: repeat(4, minmax(0,1fr)); gap: 18px; }
+      .categories { gap: 16px; }
+      .category { padding: 22px; }
+      .bottom-nav { display: none; }
+      footer { padding-bottom: 35px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="announcement">انتخابی خاص برای کوچولوهای دوست‌داشتنی ✦</div>
+
+  <header>
+    <div class="header-inner">
+      <button class="header-action" aria-label="سبد خرید" onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})">♡</button>
+      <a class="brand" href="#">
+        <h1>NOOR</h1>
+        <span>فروشگاه نور</span>
+      </a>
+      <button class="header-action" aria-label="محصولات" onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})">⌕</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-panel">
+        <img class="hero-photo" src="https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?auto=format&fit=crop&w=1400&q=85" alt="استایل کودکانه">
+        <div class="hero-shade"></div>
+        <div class="hero-copy">
+          <div class="eyebrow">LITTLE MOMENTS, BIG LOVE</div>
+          <h2>دنیایی از زیبایی<br>برای کوچولوها</h2>
+          <p>انتخاب‌هایی خاص و دوست‌داشتنی برای استایل هر روز کودکان شما.</p>
+          <a class="primary-btn" href="#products">دیدن محصولات &larr;</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="categories">
+      <div class="section-heading">
+        <div>
+          <h2>دسته‌بندی محصولات</h2>
+          <p>برای هر سن، یک انتخاب دوست‌داشتنی</p>
+        </div>
+      </div>
+      <div class="categories">
+        <a class="category" href="#products"><div class="category-icon">♧</div><span>نوزادی</span></a>
+        <a class="category" href="#products"><div class="category-icon">♡</div><span>دخترانه</span></a>
+        <a class="category" href="#products"><div class="category-icon">✳</div><span>پسرانه</span></a>
+        <a class="category" href="#products"><div class="category-icon">✦</div><span>ست‌ها</span></a>
+      </div>
+    </section>
+
+    <section class="section" id="products">
+      <div class="section-heading">
+        <div>
+          <h2>منتخب‌های نور</h2>
+          <p>چند انتخاب خاص برای شروع</p>
+        </div>
+        <a href="#contact">سفارش و راهنمایی ←</a>
+      </div>
+
+      <div class="products">
+        <!-- برای تغییر محصول، عکس، نام و قیمت همین کارت را ویرایش کن -->
+        <article class="product">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?auto=format&fit=crop&w=700&q=80" alt="لباس کودک">
+            <span class="product-tag">منتخب</span>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">ست روزمره کودک</h3>
+            <p class="product-description">راحت و مناسب استفاده روزانه</p>
+            <div class="price">۱,۸۹۰,۰۰۰ تومان</div>
+            <button class="buy-btn" onclick="orderProduct('ست روزمره کودک')">استعلام و سفارش</button>
+          </div>
+        </article>
+
+        <article class="product">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?auto=format&fit=crop&w=700&q=80" alt="پوشاک کودک">
+            <span class="product-tag">جدید</span>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">هودی مینیمال</h3>
+            <p class="product-description">استایلی ساده و خاص</p>
+            <div class="price">۲,۲۵۰,۰۰۰ تومان</div>
+            <button class="buy-btn" onclick="orderProduct('هودی مینیمال')">استعلام و سفارش</button>
+          </div>
+        </article>
+
+        <article class="product">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?auto=format&fit=crop&w=700&q=80" alt="لباس بچگانه">
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">پلیور نرم کودک</h3>
+            <p class="product-description">مناسب روزهای خنک</p>
+            <div class="price">۱,۶۹۰,۰۰۰ تومان</div>
+            <button class="buy-btn" onclick="orderProduct('پلیور نرم کودک')">استعلام و سفارش</button>
+          </div>
+        </article>
+
+        <article class="product">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?auto=format&fit=crop&w=700&q=80" alt="استایل کودک">
+            <span class="product-tag">پیشنهاد نور</span>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">کت سبک کودک</h3>
+            <p class="product-description">انتخابی شیک برای بیرون</p>
+            <div class="price">۲,۷۹۰,۰۰۰ تومان</div>
+            <button class="buy-btn" onclick="orderProduct('کت سبک کودک')">استعلام و سفارش</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="story">
+      <div class="noor-mark">NOOR</div>
+      <h2>سادگی، کیفیت، عشق</h2>
+      <p>در فروشگاه نور، لباس‌هایی را انتخاب می‌کنیم که لحظه‌های کودکی را زیباتر کنند. برای دریافت اطلاعات سایز، موجودی و قیمت روز با ما در ارتباط باشید.</p>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="footer-brand">NOOR</div>
+    <p>فروشگاه نور · پوشاک کودک</p>
+    <p>برای اطلاع از موجودی و ثبت سفارش با ما در تماس باشید.</p>
+    <!-- شماره واتساپ یا لینک شبکه اجتماعی را بعداً جایگزین می‌کنیم -->
+    <a class="contact-btn" href="https://instagram.com/" target="_blank" rel="noopener">ارتباط با فروشگاه</a>
+    <p>© NOOR Store</p>
+  </footer>
+
+  <nav class="bottom-nav">
+    <a class="active" href="#"><b>⌂</b>خانه</a>
+    <a href="#categories"><b>▦</b>دسته‌ها</a>
+    <a href="#products"><b>♡</b>محصولات</a>
+    <a href="#contact"><b>☏</b>تماس</a>
+  </nav>
+
+  <script>
+    function orderProduct(name) {
+      alert('برای سفارش «' + name + '» فعلاً با فروشگاه تماس بگیرید. راه ارتباطی را در مرحله بعد تنظیم می‌کنیم.');
+    }
+  </script>
+</body>
+                                                                                 </html>
+
+  
